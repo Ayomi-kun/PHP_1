@@ -1,12 +1,13 @@
 body {
-    background : dimgrey;
+    background: white;
 }
 #frm{
+    background: grey;
     border: solid black 1px;
     width: 20%;
     border-radius: 5px;
     margin: 100px auto;
-    background: white;
+    
 }
 #btn{
     color: black;

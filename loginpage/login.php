@@ -4,7 +4,7 @@
 <html>
     <head>
         <title> Login page </title>
-        <link rel="stylsheet" type="text/css" href="style.css">
+         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="frm">
@@ -21,7 +21,7 @@
                  <p>
                     
                     <input type="submit" id="btn" value="login" />
-                    
+
                 </p>
 
             </form>
