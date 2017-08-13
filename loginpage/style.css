@@ -15,12 +15,17 @@ body {
     margin-left: 40px;
 }
 #btn1{
+
+    border: solid black 1px;
     color: black;
     padding: 5px;
     margin-left: 20px;
+    border-radius: 5px;
 }
 #btn2{
+    border: solid black 1px;
     color: black;
     padding: 5px;
-    margin-left: 100px;
+    margin-left: 120px;
+    border-radius: 5px;
 }
