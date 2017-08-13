@@ -2,7 +2,7 @@ body {
     background: white;
 }
 #frm{
-    background: grey;
+    background: darkgrey;
     border: solid black 1px;
     width: 20%;
     border-radius: 5px;
@@ -26,6 +26,6 @@ body {
     border: solid black 1px;
     color: black;
     padding: 5px;
-    margin-left: 120px;
+    margin-left: 100px;
     border-radius: 5px;
 }
