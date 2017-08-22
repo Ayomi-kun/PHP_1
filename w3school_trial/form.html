@@ -3,7 +3,9 @@
         <title>form </title>
     </head>
     <body>
-        <form action="welcome.php" method="POST" >
+        <form action="<?php echo $_SERVER["PHP_SELF"];?>" method="post" >
+            <!--the above action is supposed to carry the data on submit to the same page-->
+            <!--and also preven injection of javascript - htmlspecialchars-->
             <label> First Name:</label>
             <input type="text" name="first_name"><br>
             <label>Last Name:</label>

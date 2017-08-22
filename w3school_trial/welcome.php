@@ -11,7 +11,7 @@
         ?>
 
         Welcome <?php echo $first_name; ?><br>
-        Your email address is: <?php echo $email; ?>
+        We will contact you on your email address: <?php echo $email; ?>
 
     </body>
 </html>
