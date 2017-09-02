@@ -3,6 +3,7 @@
         <!--this below will show the directory of the opened file!!-->
         <!--<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>-->
         <?php
+        // api's will also be intigrated into the code - eventually.
         //define variables and set to empty values
         $first_name = $last_name = $middle_name = $email =  $gender ="";
         // creating variables to handle error.
