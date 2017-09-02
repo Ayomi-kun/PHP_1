@@ -12,6 +12,7 @@
         $last_name = $_POST["last_name"];
         $middle_name = $_POST["middle_name"];
         $email = $_POST["email"];
+        $gender = $_POST["gender"];
 
         function test_input($data){
             $data = trim($data);
@@ -54,6 +55,7 @@
         ?>
 
         Welcome <?php echo $first_name; ?><br>
+        you will now be directed to the <?php echo $gender; ?> category<br>
         We will contact you on your email address: <?php echo $email; ?>
 
     </body>
