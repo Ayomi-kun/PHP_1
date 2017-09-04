@@ -1,13 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="A blog template with bootstrap">
+        <meta name="author" content="AYOMIGA">
+        <!-- the above is the basic requirement for a standard website -->
         <title>form </title>
     </head>
     <body>
-        <form action="welcome.php" method="post" >
-            <!--the above action is supposed to carry the data on submit to the same page PHP_self-->
-            <!--and also preven injection of javascript - htmlspecialchars-->
+        <form name="myform" onsubmit ="return validate_form()" action="welcome.php" method="post" >
+          <!-- this will validate the form from the js functiona and send the the authenticated data to the php page -->
             <label> First Name:</label>
-            <input type="text" name="first_name"><br>
+            <input type="text" name="first_name" required><br>
+            <!-- the required in the input field makes sure the filled is not left blank -->
             <label>Last Name:</label>
             <input type="text" name="last_name"><br>
             <label>Middle Name:</label>
@@ -16,8 +22,19 @@
             <input type="radio" name="gender" value="female">Female
             <input type="radio" name="gender" value="male">Male <br>
               <label> E-mail:</label>
-            <input type="text" name="email"><br>
-            <input type="submit">
+            <input type="text" name="email" required><br>
+            <input type="submit" value="Submit">
         </form>
+
+        <script src="formvalidate.js"></script>
+        <script>
+                function validate_form(){
+                    var x = document.forms(["myform"]["last_name"]).value;
+                    if(x == null || x == ""){
+                        alert("last_name" + "must be filled out");
+                        return false;
+                    }
+                }
+        </script>
     </body>
 </html>
