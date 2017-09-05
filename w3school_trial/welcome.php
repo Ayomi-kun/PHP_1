@@ -21,6 +21,38 @@
             $data = htmlspecialchars($data);
             return $data;
         }
+
+
+
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
+            if(empty($first_name)){
+                $first_name_error = "Name is required";
+            }else{
+                $first_name = test_input($first_name);
+            }
+            if(empty($last_name)){
+                $last_name_error = "last name is required";
+            }else{
+                $last_name = test_input($last_name);
+            }
+            if(empty($username)){
+                $username = "";
+            }else{
+                $username = test_input($username);
+            }
+            if(empty($email)){
+                $email_error = "Email required";
+            }else{
+                $email = test_input($email);
+            }
+            if(empty($gender)){
+                $gender_error = "please select the gender of your type";
+            }else{
+                $gender = test_input($gender);
+            }
+        }
+
+      
         ?>
 
         Welcome <?php echo $first_name; ?><br>
